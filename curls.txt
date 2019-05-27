@@ -1,0 +1,16 @@
+
+1. Import file
+
+curl -X POST \
+  http://localhost:8086/db/init \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
+  -F file=@/home/global/work/playground/industryBuying/cunique.csv/cunique.csv
+
+
+2. Query Data
+
+curl -X GET \
+  'http://localhost:8086/search?query=bank'
+
+
